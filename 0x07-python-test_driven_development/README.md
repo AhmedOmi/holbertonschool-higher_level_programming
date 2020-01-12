@@ -17,6 +17,6 @@
   - How to write documentation for each module and function
   - What are the basic option flags to create tests
   - How to find edge cases
-##AUthors
+##Authors
 
   - Ahmed Omar miladi <ahmedomarmiladi@gmail.com , 1125@holbertonschool.com>
