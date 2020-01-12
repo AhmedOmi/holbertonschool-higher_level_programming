@@ -1,6 +1,6 @@
-#Python - Test-driven development
+# Python - Test-driven development
 
-##Doctest
+## Doctest
     doctest tests source code by running examples embedded in the documentation and verifying 
     that they produce the expected results. It works by parsing the help text to find examples, 
     running them, then comparing the output text against the expected value. Many developers find 
@@ -8,7 +8,7 @@
     to learn before using it. However, as the examples become more complex the lack 
     of fixture management can make writing doctest tests more cumbersome than using unittest.
 
-##General
+## General
 
   - Why Python programming is awesome
   - Whats an interactive test
@@ -17,6 +17,6 @@
   - How to write documentation for each module and function
   - What are the basic option flags to create tests
   - How to find edge cases
-##Authors
+## Authors
 
   - Ahmed Omar miladi <ahmedomarmiladi@gmail.com , 1125@holbertonschool.com>
