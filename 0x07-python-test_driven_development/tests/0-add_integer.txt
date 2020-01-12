@@ -1,0 +1,41 @@
+the ''0-add_integer'' module
+===========================
+Using ''0-add_integer''
+-----------------------
+
+import function
+>>> add_integer = __import__('0-add_integer').add_integer
+
+test 1
+>>> add_integer(1, 2)
+3
+
+test 2
+>>> add_integer(100, -2)
+98
+
+test 3
+>>> add_integer(0, 0)
+0
+
+test 4
+>>> add_integer(2)
+100
+
+test 5
+>>> add_integer(100.3, -2)
+98
+
+test 6
+>>> add_integer(4, "school")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+test 7
+>>> add_integer("school", 4)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+test 8
+>>> add_integer(-100.9)
+-2
