@@ -1,3 +1,5 @@
 #!/usr/bin/python3
 class Rectangle:
-    pass
+    "empty class rectangle"
+    def __init__(self):
+        pass
