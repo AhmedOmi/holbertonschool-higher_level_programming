@@ -36,3 +36,12 @@ test4
 >>> print_square(1)
 #
 
+test5
+>>> print_square("o")
+Traceback (most recent call last):
+TypeError: size must be an integer
+
+test6
+>>>print_square(-5)
+Traceback (most recent call last):
+ValueError: size must be >= 0
