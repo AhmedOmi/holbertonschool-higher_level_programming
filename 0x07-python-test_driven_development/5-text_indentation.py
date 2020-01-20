@@ -5,7 +5,7 @@
 
 
 def text_indentation(text):
-    if not type(text) == str:
+    if not type(text) is str:
         raise TypeError("text must be a string")
     for string in ".?:":
         text = (string + "\n\n").join(
