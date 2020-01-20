@@ -20,6 +20,8 @@ test3
 Traceback (most recent call last):
 TypeError: text must be a string
 
+
 test4
->>> text_indentation("ahmed ")
-ahmed 
+>>> text_indentation(Nan)
+Traceback (most recent call last):
+NameError: string with blank line
