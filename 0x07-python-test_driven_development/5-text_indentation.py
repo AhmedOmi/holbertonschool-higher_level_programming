@@ -9,7 +9,7 @@ def text_indentation(text):
         raise TypeError("text must be a string")
     for string in ".?:":
         text = (string + "\n\n").join(
-            [i.strip(" ")for i in text.split(string)])
+[i.strip(" ")for i in text.split(string)])
 
     print(text, end="")
 
