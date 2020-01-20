@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 '''
-This module is 
+This module is
 add_integer(a, b)  adds two integers
-and return an integer 
+and return an integer
 '''
 def add_integer(a, b=98):
         '''
