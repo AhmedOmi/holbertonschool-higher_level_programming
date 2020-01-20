@@ -24,3 +24,8 @@ test4
 >>> matrix_divided(2, 1)
 Traceback (most recent call last):
 TypeError: matrix must be a matrix (list of lists) of integers/floats
+
+test5
+>>> matrix_divided([[1, 2, 3], [4, 5, 6]])
+Traceback (most recent call last):
+TypeError: matrix must have each row with the same size
