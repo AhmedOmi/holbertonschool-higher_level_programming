@@ -39,3 +39,8 @@ TypeError: a must be an integer
 test 8
 >>> add_integer(-100.9)
 -2
+
+test 9
+>>> add_integer(NaN)
+Traceback (most recent call last):
+NameError: name 'NaN' is not defined
