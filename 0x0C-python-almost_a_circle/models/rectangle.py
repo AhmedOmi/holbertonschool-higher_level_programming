@@ -76,3 +76,8 @@ class Rectangle(Base):
         ''' function to calculate area if rectangle '''
         air = self.width * self.height
         return air
+
+    def display(self):
+        ''' function to desplay '''
+        for i in range(self.height):
+            print("#" * self.width)
