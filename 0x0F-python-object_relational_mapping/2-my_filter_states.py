@@ -11,7 +11,7 @@ if __name__ == "__main__":
     db = MySQLdb.connect(host=l, port=p, user=a1, passwd=a2, db=a3)
     cur = db.cursor()
     cur.execute("SELECT id, name FROM states WHERE name\
-              REGEXP BINARY '{}' ORDER BY id ASC".format(keyword))
+            REGEXP BINARY '{}' ORDER BY id ASC".format(keyword))
     r = cur.fetchall()
     for row in r:
         print(row)
