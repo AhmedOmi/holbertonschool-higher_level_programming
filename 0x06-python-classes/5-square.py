@@ -25,4 +25,3 @@ class Square:
         """Prints this square."""
         for i in range(self.size):
             print("#" * self.size)
-        print()
