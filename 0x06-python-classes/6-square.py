@@ -38,12 +38,12 @@ class Square:
         """Prints this square."""
         if self.size > 0:
             for i in range(self.position[1]):
-                print('$')
+                print()
             for j in range(self.size):
                 for a in range(self.position[0]):
-                    print('_', end="")
+                    print('', end="")
                 for b in range(self.size):
                     print('#', end="")
-                print('$')
+                print()
         else:
-            print('$')
+            print()
