@@ -24,6 +24,5 @@ class Square:
     def my_print(self):
         """Prints this square."""
         for i in range(self.size):
-            for j in range(self.size):
-                print((("#" * size + "\n") * size), end="")
+            print("#" * self.size)
         print()
