@@ -2,6 +2,7 @@
 """ class inherite"""
 
 from sqlalchemy import (
+    inspect,
     Column,
     Integer,
     String
