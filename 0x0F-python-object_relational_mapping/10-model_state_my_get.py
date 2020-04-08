@@ -10,7 +10,7 @@ from sqlalchemy.orm import sessionmaker
 def get_states():
     """ list all state containe a """
     argument = sys.argv
-    base_url = 'mysql+mysqldb://{}:{}@localhost:3306/{}{}'
+    base_url = 'mysql+mysqldb://{}:{}@localhost:3306/{}'
     db = base_url.format(argument[1], argument[2], argument[3], argument[4])
     engine = create_engine(db, pool_pre_ping=True)
     Base.metadata.create_all(engine)
