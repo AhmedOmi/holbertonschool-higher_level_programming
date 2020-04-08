@@ -20,7 +20,7 @@ def list_first():
     if i is not None:
         print(i.id, ": ", i.name, sep="")
     else:
-        print(Nothing)
+        print("Nothing")
 
 
 if __name__ == "__main__":
