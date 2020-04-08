@@ -12,7 +12,7 @@ from sqlalchemy.ext.declarative import declarative_base
 Base = declarative_base()
 
 
-class State:
+class State(Base):
     """Class state"""
     __tablename__ = "states"
     id = Column(Integer, autoincrement=True, unique=True,
