@@ -16,12 +16,9 @@ def contain_a():
     Session = sessionmaker(bind=engine)
     session = Session()
     x = session.query(State)
-    a = "a"
+    a = 'a'
     if a in x:
         print(x.id, ": ", x.name, sep="")
-    else:
-        print(Nothing)
-
 
 if __name__ == "__main__":
     contain_a()
