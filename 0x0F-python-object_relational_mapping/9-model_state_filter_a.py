@@ -18,7 +18,7 @@ def contain_a():
     x = session.query(State)
     a = 'a'
     for i in range(x):
-        if a in x:
+        if a == x[i]:
             print(x.id, ": ", x.name, sep="")
 
 if __name__ == "__main__":
