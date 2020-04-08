@@ -15,8 +15,7 @@ def contain_a():
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    x = session.query(State)
-    for i in x.filter(State.name.like('%a%')):
+    for inst in session.query(State).filter(State.name.like('%a%')):
         print(i.id, ": ", i.name, sep="")
 if __name__ == "__main__":
     contain_a()
