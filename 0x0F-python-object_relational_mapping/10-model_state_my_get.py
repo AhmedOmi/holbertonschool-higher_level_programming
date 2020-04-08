@@ -16,12 +16,10 @@ def get_states():
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    x = session.query(State)
-    if(x.filter(State.name == argument[4].first()):
+    x = session.query(State).filter(State.name == arg[4]).first()
+    if x is not None:
         print(x.id)
     else:
         print("Not found")
-
-
 if __name__ == "__main__":
     get_states()
