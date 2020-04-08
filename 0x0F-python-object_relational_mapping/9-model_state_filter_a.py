@@ -16,10 +16,7 @@ def contain_a():
     Session = sessionmaker(bind=engine)
     session = Session()
     x = session.query(State)
-    a = 'a'
-    for i in range(x):
-        if a == x[i]:
-            print(x.id, ": ", x.name, sep="")
-
+     for i in x.filter(State.name.like('%a%')):
+        print(inst.id, ": ", inst.name, sep="")
 if __name__ == "__main__":
     contain_a()
