@@ -16,8 +16,8 @@ def get_states():
     Base.metadata.create_all(engine)
     Session = sessionmaker(bind=engine)
     session = Session()
-    x = session.query(State).filter(State.name)
-    if(x == argument[4]):
+    x = session.query(State)
+    if(x.filter(State.name == argument[4].first()):
         print(x.id)
     else:
         print("Not found")
