@@ -8,9 +8,11 @@ import my class BaseGeometry
 class Rectangle(BaseGeometry):
     """ class Rectangle
     """
+
     def __init__(self, width, height):
         """ init function constructor
         """
+
         self.integer_validator("width", width)
         self.integer_validator("height", height)
         self.__width = width
