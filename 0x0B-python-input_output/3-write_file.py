@@ -1,11 +1,5 @@
 #!/usr/bin/python3
-"""
-function is kinf of class
-"""
-
-
-def is_kind_of_class(obj, a_class):
-    """
-    issubclass
-    """
-    return issubclass(type(obj), a_class)
+def write_file(filename="", text=""):
+    with open(filename, 'w') as file:
+        file.write(text)
+        return(len(text))
