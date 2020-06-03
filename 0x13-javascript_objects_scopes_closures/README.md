@@ -1,0 +1,1 @@
+new javascript project Read this first
