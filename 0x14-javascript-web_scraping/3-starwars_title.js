@@ -1,19 +1,8 @@
 #!/usr/bin/node
-const argv = process.argv;
+const process = require('process');
 const request = require('request');
-let number = '';
-if (argv[2]) { number = argv[2]; }
-request('https://swapi-api.hbtn.io/api/films/' + number, function (error, request) {
-  if (error) {
-    console.log();
-    return;
-  }
-  if (request.statusCode === 200) {
-    const response = JSON.parse(request.body);
-    if (number !== '') {
-      console.log(response.title);
-      return;
-    }
-    for (const i in response.results) { console.log(response.results[i].title); }
-  }
+request('https://swapi-api.hbtn.io/api/films/' + process.argv[2], function (error, response, body) {
+  if (error) { throw error; }
+  const jsn = JSON.parse(body);
+  for (const key in jsn) { if (key === 'title') console.log(jsn[key]); }
 });
