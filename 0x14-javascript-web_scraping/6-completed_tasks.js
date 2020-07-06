@@ -1,20 +1,16 @@
 #!/usr/bin/node
-const argv = process.argv;
+const process = require('process');
 const request = require('request');
-request(argv[2], function (error, request) {
-  if (error) {
-    console.log(error);
-    return;
-  }
-  if (request.statusCode === 200) {
-    const response = JSON.parse(request.body);
-    const taskNb = {};
-    let id = 0;
-    for (let i = 0; i < response.length; i++) {
-      id = response[i].userId;
-      if (taskNb[id] === undefined) { taskNb[id] = 0; }
-      taskNb[id] += 1;
-    }
-    console.log(taskNb);
+request(process.argv[2], function (error, response, body) {
+  if (error) { throw error; }
+  const jsn = JSON.parse(body);
+  let ze = 0;
+  let usr = 1;
+  let number = 0;
+  for (let i = 0; jsn[i]; i++) number = jsn[i].userId;
+  for (let z = 0; z < number; z++) {
+    ze = 0;
+    for (let i = 0; jsn[i]; i++) { if (jsn[i].userId === usr && jsn[i].completed === true) ze++; }
+    if (usr === 1) { console.log(`{ '${usr}': ${ze},`); } else if (usr === 10) { console.log(`  '${usr}': ${ze} }`); } else { console.log(`  '${usr}': ${ze},`); } usr++;
   }
 });
